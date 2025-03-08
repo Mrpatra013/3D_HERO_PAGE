@@ -99,11 +99,74 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: calc(90vh - 6rem);
+  min-height: calc(90vh - 10rem);
 }
 
 .content{
-  max-width: 40rem;
+  max-width: 70rem;
   margin-left: 10%;
   z-index: 999;
+}
+
+.tag-box{
+  position: relative;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 50px;
+  background: linear-gradient(to right,#656565,#7f42a7,#6600c5,#5300a0,#757575,#656565);
+  animation: animationGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animationGradient {
+  to{
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px 3px 3px 3px ;
+  border-radius: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease ;
+  cursor: pointer;
+}
+
+.tag-box .tag:hover{
+  color: #5300a0;
+}
+
+.content h1{
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  margin: 2rem 0;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(128, 128, 128, 0.6);
+}
+
+.description {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  max-width: 35rem;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-get-started{
+  text-decoration: none;
+  border: 1px solid #2a2a2a;
+  padding: 0.7rem 1.2rem;
+  border: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
 }
