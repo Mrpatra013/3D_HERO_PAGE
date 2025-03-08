@@ -48,7 +48,6 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  z-index: 999;
 }
 
 header h1{
@@ -71,6 +70,7 @@ nav a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  z-index: 999;
 }
 
 nav a:hover{
@@ -87,6 +87,7 @@ nav a:hover{
   font-weight: 00;
   transition: background-color 0.2s ease;
   cursor: pointer;
+  z-index: 999;
 }
 
 .btn-signing:hover{
