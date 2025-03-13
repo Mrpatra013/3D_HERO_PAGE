@@ -199,7 +199,8 @@ main{
 .robot-3d{
   position: absolute;
   top: 0;
-  right: -23%;
+  right: -25%;
+  scale: 0.8;
 }
 
 
